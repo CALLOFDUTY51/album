@@ -18,8 +18,20 @@ ul{
 }
 li{
     list-style: none;
-    margin: 10px;
-    background-color:white;
+    margin: 30px;
+    font: bolder;
+    background-color:white; 
+}
+li::after{
+    width: 0%;
+    background-color: red;
+    content: '';
+    display: block;
+    height: 2px;
+    transition: 0.4s;
+}
+li:hover::after{
+    width: 100%;
 }
 #b{
     
